@@ -8,6 +8,15 @@ Struktur:
 os-sim-python/
 ├─ README.md
 ├─ requirements.txt
+├─ docs/
+│  └─ Projekt-Quickstart
+│  └─ JupyterLab-Quickstart
+├─ exercises/
+│  ├─ week01/
+│  │  └─ README.md
+│  └─ week02/
+│     └─ README.md
+│ ...
 ├─ src/
 │  ├─ reference/
 │  │  └─ scheduler.py
