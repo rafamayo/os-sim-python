@@ -1,0 +1,3 @@
+pytest
+nbclient
+matplotlib
