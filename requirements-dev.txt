@@ -1,0 +1,7 @@
+# Development / Notebook extras
+jupyterlab
+nbclient
+nbdime
+ipykernel
+matplotlib
+black
