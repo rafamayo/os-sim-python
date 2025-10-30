@@ -2,7 +2,7 @@ import importlib
 import pytest
 
 # Test reference scheduler
-from src.reference.scheduler import FifoScheduler, Process as RefProcess
+from reference.scheduler import FifoScheduler, Process as RefProcess
 
 def test_reference_fifo_empty():
     s = FifoScheduler()
