@@ -17,7 +17,7 @@ def test_reference_fifo_order():
 # If student implementation exists, run the same tests against it (optional)
 def test_student_scheduler_if_exists():
     try:
-        student_mod = importlib.import_module('src.student.scheduler')
+        student_mod = importlib.import_module('student.scheduler')
     except Exception:
         pytest.skip('Student scheduler not present')
     # expect class StudentFifoScheduler
