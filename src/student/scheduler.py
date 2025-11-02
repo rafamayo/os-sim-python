@@ -13,10 +13,17 @@ class Process:
         if self.remaining is None:
             self.remaining = self.burst
 
+
 class StudentFifoScheduler:
-    """Student implementation placeholder for FIFO scheduler."""
+    """
+    TODO: Implement the FIFO scheduling policy.
+
+    - schedule(self, processes: List[Process]) -> Optional[Process]
+      should return the first element from the ready list (or None).
+    - Do NOT modify the simulation harness -- it expects a Process object
+      that is present in the 'processes' list.
+    """
+
     def schedule(self, processes: List[Process]) -> Optional[Process]:
-        # TODO: implement scheduling logic
-        if not processes:
-            return None
-        return processes[0]
+        # Students: replace the following placeholder with your implementation.
+        raise NotImplementedError("Implement StudentFifoScheduler.schedule()")
