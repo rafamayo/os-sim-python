@@ -1,5 +1,5 @@
-from reference.scheduler import FifoScheduler, Process
-from sim.simulator import run_simulation
+from week01.reference.scheduler import FifoScheduler, Process
+from week01.sim.simulator import run_simulation
 
 
 def test_fifo_convoy():

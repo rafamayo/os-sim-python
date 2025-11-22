@@ -1,8 +1,6 @@
 # Reading-Hints (Online) — Betriebssysteme (Übungen, Woche 1–15)
 
-Diese Datei enthält kurze, pragmatische Empfehlungen zu Online-Quellen für jede Übungswoche. Ziel: Studierenden eine schnelle, frei verfügbare Einstiegsliteratur zu geben (Artikel, Kapitel, Tutorials). Die Liste ist bewusst klein und fokussiert — für Vertiefung können weitere Quellen ergänzt werden.
-
-> Tipp: Viele Kernkapitel werden sehr gut in *Operating Systems: Three Easy Pieces (OSTEP)* behandelt. OSTEP ist frei verfügbar und eignet sich hervorragend als Primärquelle für Vorlesungen und Übungen.
+Diese Datei enthält kurze, pragmatische Empfehlungen zu Online-Quellen für jede Übungswoche.
 
 ---
 
@@ -79,8 +77,4 @@ Diese Datei enthält kurze, pragmatische Empfehlungen zu Online-Quellen für jed
   http://beej.us/guide/bgipc/
 - **The Little Book of Semaphores** — Übungen zu Synchronisation.  
   https://greenteapress.com/wp/semaphores/
-
----
-
-Wenn du möchtest, kann ich die Reading‑Hints noch um direkte Links zu bestimmten Kapiteln (z. B. OSTEP‑Kapitelnummern) erweitern oder thematisch nach Schwierigkeitsgrad ordnen.
 
