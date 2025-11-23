@@ -1,8 +1,8 @@
 # Übungsblatt — Woche 01: Scheduler Basics (Python)
 
-**Kurs:** Betriebssysteme (OS-Simulator)
-**Dauer (empfohlen):** 90 Minuten Übungssitzung (+ Vor- und Nachbereitung)
-**Ort im Repo:** `exercises/week01/README.md`
+* **Kurs:** Betriebssysteme (OS-Simulator)
+* **Dauer (empfohlen):** 90 Minuten Übungssitzung (+ Vor- und Nachbereitung)
+* **Ort im Repo:** `exercises/week01/README.md`
 
 ---
 
@@ -31,7 +31,7 @@
    ```bash
    pip install -e .
    ```
-5. Prüfe initial: `pytest -q` (soll die Referenz-smoke-tests laufen lassen).
+5. Prüfe initial: `pytest tests/week01 -q` (soll die Referenz-smoke-tests laufen lassen).
 
 ---
 
@@ -83,7 +83,6 @@
    * P3: `arrival=0.2`, `burst=1.0`
 2. Führe `run_simulation(FifoScheduler(), [p1,p2,p3])` aus und sammle `(pid, waiting, turnaround)`-Werte.
 3. Berechne `avg_wait` und `avg_turn` und begründe, warum FIFO in diesem Szenario ungünstig ist (Convoy-Effekt).
-4. Optional: Implementiere einen `RoundRobinScheduler` (quantum z. B. 1.0) und vergleiche Metriken.
 
 ---
 
@@ -134,10 +133,10 @@
 
 ## Wo finden die relevanten Dateien?
 
-* Referenz: `src/reference/scheduler.py` (nicht editieren).
-* Student Skeleton: `src/student/scheduler.py` (hier implementieren).
-* Simulator: `src/sim/simulator.py`.
-* Tests: `tests/test_student_scheduler.py`, `tests/test_scheduler_metrics.py`.
+* Referenz: `src/week01/reference/scheduler.py` (nicht editieren).
+* Student Skeleton: `src/week01/student/scheduler.py` (hier implementieren).
+* Simulator: `src/week01/sim/simulator.py`.
+* Tests: `tests/week01/test_student_scheduler.py`, `tests/test_scheduler_metrics.py`.
 * Notebook: `notebooks/week01_scheduler_basics.ipynb`.
 
 
