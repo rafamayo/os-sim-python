@@ -1,5 +1,5 @@
 from typing import List, Tuple
-from reference.scheduler import Process
+from common.process import Process
 
 def run_simulation(scheduler, processes: List[Process]):
     """Run a simple discrete simulation returning list of (pid, waiting, turnaround).

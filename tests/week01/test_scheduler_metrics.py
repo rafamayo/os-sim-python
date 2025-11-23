@@ -1,4 +1,5 @@
-from week01.reference.scheduler import FifoScheduler, Process
+from common.process import Process
+from week01.reference.scheduler import FifoScheduler
 from week01.sim.simulator import run_simulation
 
 
