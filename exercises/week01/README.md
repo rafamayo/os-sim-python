@@ -10,7 +10,7 @@
 
 * Verstehen, was ein Scheduler tut (Ready-Queue, Auswahl des nächsten Prozesses).
 * Prozesse mit `arrival` und `burst` modellieren und `remaining` nutzen.
-* Eine einfache FIFO-Scheduler-Strategie in `src/student/scheduler.py` implementieren.
+* Eine einfache FIFO-Scheduler-Strategie in `src/week01/student/scheduler.py` implementieren.
 * Eine kleine Simulations-Harness benutzen, um Scheduler miteinander zu vergleichen (Convoy-Experiment).
 * Tests lokal ausführen und Notebooks interaktiv nutzen.
 
@@ -37,8 +37,8 @@
 
 ## Wichtiger Hinweis zu den Quell-Dateien
 
-* **Nicht verändern:** `src/reference/scheduler.py` enthält die *instructor/reference* Implementierung (nur zur Demonstration). Bitte **ändere diese Datei nicht**.
-* **Implementieren:** `src/student/scheduler.py` ist als **Skeleton/Stub** vorgesehen — dort implementierst du `StudentFifoScheduler.schedule(processes)`. Die Aufgaben und die Tests beziehen sich auf diese Datei.
+* **Nicht verändern:** `src/week01/reference/scheduler.py` enthält die *instructor/reference* Implementierung (nur zur Demonstration). Bitte **ändere diese Datei nicht**.
+* **Implementieren:** `src/week01/student/scheduler.py` ist als **Skeleton/Stub** vorgesehen — dort implementierst du `StudentFifoScheduler.schedule(processes)`. Die Aufgaben und die Tests beziehen sich auf diese Datei.
 
 ---
 
@@ -52,7 +52,7 @@
 
 ### Aufgabe B — Implementiere `StudentFifoScheduler` (30–40 min)
 
-1. Öffne `src/student/scheduler.py`.
+1. Öffne `src/week01/student/scheduler.py`.
 2. Implementiere die Methode:
 
    ```py
@@ -65,18 +65,18 @@
 3. Führe die Tests:
 
    ```bash
-   pytest -v -r a
+   pytest tests/week01 -v -r a
    ```
 
    oder nur die relevanten Tests:
 
    ```bash
-   pytest tests/test_student_scheduler.py tests/test_scheduler_metrics.py -q
+   pytest tests/week01/test_student_scheduler.py tests/week01/test_scheduler_metrics.py -q
    ```
 
 ### Aufgabe C — Convoy-Experiment (30–40 min)
 
-1. Benutze die Simulations-Harness `run_simulation` (in `src/sim/simulator.py`) mit folgendem Szenario:
+1. Benutze die Simulations-Harness `run_simulation` (in `src/week01/sim/simulator.py`) mit folgendem Szenario:
 
    * P1: `arrival=0.0`, `burst=100.0`
    * P2: `arrival=0.1`, `burst=1.0`
@@ -88,12 +88,12 @@
 
 ## Tests (wichtig)
 
-* **Student-API Test:** `tests/test_student_scheduler.py` prüft, dass `StudentFifoScheduler` existiert und korrekt funktioniert (leere Liste → `None`, non-empty → erstes Element).
-* **Convoy Metric Test:** `tests/test_scheduler_metrics.py` führt das Convoy-Szenario auf der Referenz-FIFO aus und prüft, dass kurze Jobs deutlich warten müssen (robuste Assertion, kein exaktes Zahlen-Matching).
+* **Student-API Test:** `tests/week01/test_student_scheduler.py` prüft, dass `StudentFifoScheduler` existiert und korrekt funktioniert (leere Liste → `None`, non-empty → erstes Element).
+* **Convoy Metric Test:** `tests/week01/test_scheduler_metrics.py` führt das Convoy-Szenario auf der Referenz-FIFO aus und prüft, dass kurze Jobs deutlich warten müssen (robuste Assertion, kein exaktes Zahlen-Matching).
 * Testlauf (empfohlen verbose):
 
   ```bash
-  pytest -v -r a --tb=short
+  pytest tests/week01 -v -r a --tb=short
   ```
 
 ---
@@ -117,9 +117,9 @@
 
 ## Akzeptanzkriterien / Abnahme (Selbsttest)
 
-* `tests/test_student_scheduler.py` und `tests/test_scheduler_metrics.py` laufen lokal grün.
+* `tests/week01/test_student_scheduler.py` und `tests/test_scheduler_metrics.py` laufen lokal grün.
 * Notebook-Convoy-Zellen laufen ohne Fehler und zeigen erwartetes Verhalten (P2/P3 hohe waiting bei FIFO).
-* `src/student/scheduler.py` enthält keine Kopie der Referenz-Lösung (also: implementiert, aber nicht bereits vorimplementiert).
+* `src/week01/student/scheduler.py` enthält keine Kopie der Referenz-Lösung (also: implementiert, aber nicht bereits vorimplementiert).
 
 ---
 
