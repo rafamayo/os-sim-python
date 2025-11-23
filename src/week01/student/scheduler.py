@@ -23,7 +23,7 @@ class StudentFifoScheduler:
     - Do NOT modify the simulation harness -- it expects a Process object
       that is present in the 'processes' list.
     """
-
     def schedule(self, processes: List[Process]) -> Optional[Process]:
         # Students: replace the following placeholder with your implementation.
         raise NotImplementedError("Implement StudentFifoScheduler.schedule()")
+    
