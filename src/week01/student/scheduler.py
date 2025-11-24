@@ -25,5 +25,4 @@ class StudentFifoScheduler:
     """
     def schedule(self, processes: List[Process]) -> Optional[Process]:
         # Students: replace the following placeholder with your implementation.
-        raise NotImplementedError("Implement StudentFifoScheduler.schedule()")
-    
+        raise NotImplementedError("Implement StudentFifoScheduler.schedule()")    
