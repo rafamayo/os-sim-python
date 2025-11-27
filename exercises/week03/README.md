@@ -1,10 +1,15 @@
 # Übungsblatt — Woche 03: Prioritäts‑Scheduling & SJF/SRT
 
 **Lernziele**
-- Verstehen von Priority Scheduling (non-preemptive) und SJF/SRT (shortest job first, preemptive and non-preemptive).
-- Implementieren einfacher Scheduler-Strategien und Vergleichen der Metriken.
+
+- Den Unterschied zwischen non-preemptive SJF und preemptive SRT erklären können;
+- Wissen, wie Prioritäts-Scheduling funktioniert und welche Probleme (Starvation, Priority Inversion) auftreten können;
+- Einfache Scheduler-Klassen in Python implementieren (SjfScheduler, SrtScheduler) und testen;
+- Metriken (response, waiting, turnaround) mit Simulatoren messen und Gantt-Diagramme interpretieren;
+- Einfache Gegenmaßnahmen wie Aging implementieren und ihre Wirkung analysieren.
 
 **Aufgaben**
+
 1. Implementiere `StudentPriorityScheduler` in `src/week03/student/scheduler.py` (non-preemptive):
    - Wähle den Prozess mit der höchsten Priorität (niedrigere Zahl = höhere Priorität). Bei Gleichstand: kürzere verbleibende Zeit, dann niedrigere PID.
 2. Implementiere optional `StudentSrtScheduler` (preemptive SRT):
