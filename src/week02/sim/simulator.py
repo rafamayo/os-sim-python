@@ -1,5 +1,5 @@
 import copy
-from typing import List, Tuple, Dict, Optional
+from typing import List, Tuple, Dict, Optional, Any
 from common.process import Process
 
 def run_simulation_fifo(scheduler, processes: List[Process]) -> List[Tuple[int, float, float]]:
