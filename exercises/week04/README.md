@@ -37,21 +37,21 @@
 1. **Tests ausführen (Schnellcheck):**
 
    ```bash
-   pytest -q tests/test_pcb.py
+   pytest -q ./tests/week04
    ```
 
    Die Tests geben erstes Feedback zur API-Konformität.
 
 2. **Implementierung prüfen / erweitern:**
 
-   * Öffnen Sie `src/student/pcb.py`.
+   * Öffnen Sie `src/week04/student/pcb.py`.
    * Stellen Sie sicher, dass `ProcessControlBlock` die Felder besitzt: `pid, state, arrival, burst, remaining, priority, registers, fd_table`.
    * Methoden: `set_state(new_state)`, `is_terminated()`, `snapshot()`.
    * Achten Sie auf eine sinnvolle Initialisierung (z. B. `remaining = burst` falls None).
 
 3. **Demo-Notebook ausführen:**
 
-   * Starten Sie JupyterLab und öffnen Sie `run_pcb_demo.ipynb`.
+   * Starten Sie JupyterLab und öffnen Sie `week04_run_pcb_demo.ipynb`.
    * Führen Sie die Zellen aus und beobachten Sie die Statusänderungen.
 
 4. *(Optional, fortgeschritten)* Integration in Simulator:
