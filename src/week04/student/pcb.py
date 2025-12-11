@@ -33,7 +33,7 @@ class ProcessControlBlock:
     def set_state(self, new_state: ProcessState) -> None:
         """Set the PCB state. Simple validation included."""
         if self.state == ProcessState.TERMINATED:
-            raise RuntimeError(\"Cannot change state of terminated process\") from None
+            raise RuntimeError("Cannot change state of terminated process") from None
         # Optionally: validate allowed transitions here
         self.state = new_state
 
