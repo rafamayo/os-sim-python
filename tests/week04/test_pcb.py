@@ -1,5 +1,5 @@
 import pytest
-from src.week04.student.pcb import ProcessControlBlock, ProcessState
+from week04.student.pcb import ProcessControlBlock, ProcessState
 
 
 def test_pcb_lifecycle():
