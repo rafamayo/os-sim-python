@@ -1,5 +1,5 @@
 from typing import Any
-from src.student.pcb import ProcessControlBlock, ProcessState
+from week04.student.pcb import ProcessControlBlock, ProcessState
 
 
 def create_pcb_from_process(process: Any) -> ProcessControlBlock:
